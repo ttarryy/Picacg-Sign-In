@@ -18,10 +18,10 @@ jobs:
           python-version: 3.9
 
       - name: 安装依赖
-        run: pip install httpx
+        run: pip install -r requirements.txt
 
       - name: 执行签到脚本
         env:
           ACCOUNT_LIST: ${{ secrets.ACCOUNT_LIST }}
           EMAIL_CONFIG: ${{ secrets.EMAIL_CONFIG }}
-        run: python script.py
+        run: 
