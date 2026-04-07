@@ -2,7 +2,7 @@ name: 哔咔自动签到
 
 on:
   schedule:
-    - cron: '0 1-16 * * *' # 这里可以改成你想要的时间
+    - cron: '0 0 * * *' # 这里可以改成你想要的时间
   workflow_dispatch: # 允许手动触发
 
 jobs:
